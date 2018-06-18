@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7B89BB8948E1EA13E0C27DC /* Pods_InfiniteScrollingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD83AB8EDE4DE655C977F34C /* Pods_InfiniteScrollingDemo.framework */; };
 		E27CAD8920D5CF5900E5BB9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CAD8820D5CF5900E5BB9B /* AppDelegate.swift */; };
 		E27CAD8B20D5CF5900E5BB9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CAD8A20D5CF5900E5BB9B /* ViewController.swift */; };
 		E27CAD8E20D5CF5900E5BB9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27CAD8C20D5CF5900E5BB9B /* Main.storyboard */; };
 		E27CAD9020D5CF5D00E5BB9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27CAD8F20D5CF5D00E5BB9B /* Assets.xcassets */; };
 		E27CAD9320D5CF5D00E5BB9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27CAD9120D5CF5D00E5BB9B /* LaunchScreen.storyboard */; };
+		E2CCC31120D827E900B27C1C /* ViewSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31020D827E900B27C1C /* ViewSetupable.swift */; };
+		E2CCC31A20D82C8300B27C1C /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31820D82C8300B27C1C /* AlertViewPresenter.swift */; };
+		E2CCC31B20D82C8300B27C1C /* AlertViewPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31920D82C8300B27C1C /* AlertViewPresenterDelegate.swift */; };
+		E2CCC32220D82CA700B27C1C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31D20D82CA700B27C1C /* WebService.swift */; };
+		E2CCC32320D82CA700B27C1C /* WebServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31F20D82CA700B27C1C /* WebServiceError.swift */; };
+		E2CCC32420D82CA700B27C1C /* ErrorHandleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC32020D82CA700B27C1C /* ErrorHandleable.swift */; };
+		E2CCC32520D82CA700B27C1C /* WebServiceResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC32120D82CA700B27C1C /* WebServiceResultType.swift */; };
+		E2CCC32820D8353D00B27C1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CCC32720D8353D00B27C1C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CB710262F5AF4A94304CE18 /* Pods-InfiniteScrollingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		719B1E33A95590F23D5DA772 /* Pods-InfiniteScrollingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CD83AB8EDE4DE655C977F34C /* Pods_InfiniteScrollingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteScrollingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27CAD8520D5CF5900E5BB9B /* InfiniteScrollingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27CAD8820D5CF5900E5BB9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E27CAD8A20D5CF5900E5BB9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +34,14 @@
 		E27CAD8F20D5CF5D00E5BB9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E27CAD9220D5CF5D00E5BB9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E27CAD9420D5CF5D00E5BB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CCC31020D827E900B27C1C /* ViewSetupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSetupable.swift; sourceTree = "<group>"; };
+		E2CCC31820D82C8300B27C1C /* AlertViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewPresenter.swift; sourceTree = "<group>"; };
+		E2CCC31920D82C8300B27C1C /* AlertViewPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewPresenterDelegate.swift; sourceTree = "<group>"; };
+		E2CCC31D20D82CA700B27C1C /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		E2CCC31F20D82CA700B27C1C /* WebServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceError.swift; sourceTree = "<group>"; };
+		E2CCC32020D82CA700B27C1C /* ErrorHandleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandleable.swift; sourceTree = "<group>"; };
+		E2CCC32120D82CA700B27C1C /* WebServiceResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceResultType.swift; sourceTree = "<group>"; };
+		E2CCC32720D8353D00B27C1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B89BB8948E1EA13E0C27DC /* Pods_InfiniteScrollingDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66B42EE2F0060329EE290908 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				719B1E33A95590F23D5DA772 /* Pods-InfiniteScrollingDemo.debug.xcconfig */,
+				1CB710262F5AF4A94304CE18 /* Pods-InfiniteScrollingDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8826F5B44D3F0123AE20575A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD83AB8EDE4DE655C977F34C /* Pods_InfiniteScrollingDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E27CAD7C20D5CF5900E5BB9B = {
 			isa = PBXGroup;
 			children = (
 				E27CAD8720D5CF5900E5BB9B /* InfiniteScrollingDemo */,
 				E27CAD8620D5CF5900E5BB9B /* Products */,
+				66B42EE2F0060329EE290908 /* Pods */,
+				8826F5B44D3F0123AE20575A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +94,62 @@
 		E27CAD8720D5CF5900E5BB9B /* InfiniteScrollingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E2CCC31C20D82CA700B27C1C /* NetworkLayer */,
+				E2CCC31720D82C8300B27C1C /* AlertView */,
+				E2CCC31220D8289400B27C1C /* Utilites */,
 				E27CAD8820D5CF5900E5BB9B /* AppDelegate.swift */,
 				E27CAD8A20D5CF5900E5BB9B /* ViewController.swift */,
+				E2CCC31020D827E900B27C1C /* ViewSetupable.swift */,
 				E27CAD8C20D5CF5900E5BB9B /* Main.storyboard */,
-				E27CAD8F20D5CF5D00E5BB9B /* Assets.xcassets */,
+				E2CCC32620D8352A00B27C1C /* Resources */,
 				E27CAD9120D5CF5D00E5BB9B /* LaunchScreen.storyboard */,
-				E27CAD9420D5CF5D00E5BB9B /* Info.plist */,
 			);
 			path = InfiniteScrollingDemo;
+			sourceTree = "<group>";
+		};
+		E2CCC31220D8289400B27C1C /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		E2CCC31720D82C8300B27C1C /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				E2CCC31820D82C8300B27C1C /* AlertViewPresenter.swift */,
+				E2CCC31920D82C8300B27C1C /* AlertViewPresenterDelegate.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		E2CCC31C20D82CA700B27C1C /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E2CCC31E20D82CA700B27C1C /* Errors */,
+				E2CCC31D20D82CA700B27C1C /* WebService.swift */,
+				E2CCC32120D82CA700B27C1C /* WebServiceResultType.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		E2CCC31E20D82CA700B27C1C /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E2CCC31F20D82CA700B27C1C /* WebServiceError.swift */,
+				E2CCC32020D82CA700B27C1C /* ErrorHandleable.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		E2CCC32620D8352A00B27C1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2CCC32720D8353D00B27C1C /* GoogleService-Info.plist */,
+				E27CAD9420D5CF5D00E5BB9B /* Info.plist */,
+				E27CAD8F20D5CF5D00E5BB9B /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E27CAD9720D5CF5D00E5BB9B /* Build configuration list for PBXNativeTarget "InfiniteScrollingDemo" */;
 			buildPhases = (
+				40CA42BA921370C957FF21DB /* [CP] Check Pods Manifest.lock */,
 				E27CAD8120D5CF5900E5BB9B /* Sources */,
 				E27CAD8220D5CF5900E5BB9B /* Frameworks */,
 				E27CAD8320D5CF5900E5BB9B /* Resources */,
+				B496285A686D8D9FBC4DD681 /* [CP] Embed Pods Frameworks */,
+				F45DCA9581C368EB96F0C65F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E27CAD9320D5CF5D00E5BB9B /* LaunchScreen.storyboard in Resources */,
+				E2CCC32820D8353D00B27C1C /* GoogleService-Info.plist in Resources */,
 				E27CAD9020D5CF5D00E5BB9B /* Assets.xcassets in Resources */,
 				E27CAD8E20D5CF5900E5BB9B /* Main.storyboard in Resources */,
 			);
@@ -130,13 +222,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40CA42BA921370C957FF21DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InfiniteScrollingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B496285A686D8D9FBC4DD681 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45DCA9581C368EB96F0C65F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E27CAD8120D5CF5900E5BB9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E27CAD8B20D5CF5900E5BB9B /* ViewController.swift in Sources */,
+				E2CCC32220D82CA700B27C1C /* WebService.swift in Sources */,
+				E2CCC31120D827E900B27C1C /* ViewSetupable.swift in Sources */,
+				E2CCC32520D82CA700B27C1C /* WebServiceResultType.swift in Sources */,
+				E2CCC31A20D82C8300B27C1C /* AlertViewPresenter.swift in Sources */,
+				E2CCC32420D82CA700B27C1C /* ErrorHandleable.swift in Sources */,
 				E27CAD8920D5CF5900E5BB9B /* AppDelegate.swift in Sources */,
+				E2CCC32320D82CA700B27C1C /* WebServiceError.swift in Sources */,
+				E2CCC31B20D82C8300B27C1C /* AlertViewPresenterDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +440,12 @@
 		};
 		E27CAD9820D5CF5D00E5BB9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719B1E33A95590F23D5DA772 /* Pods-InfiniteScrollingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3HG6C68EY;
-				INFOPLIST_FILE = InfiniteScrollingDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InfiniteScrollingDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +459,12 @@
 		};
 		E27CAD9920D5CF5D00E5BB9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB710262F5AF4A94304CE18 /* Pods-InfiniteScrollingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3HG6C68EY;
-				INFOPLIST_FILE = InfiniteScrollingDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InfiniteScrollingDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
