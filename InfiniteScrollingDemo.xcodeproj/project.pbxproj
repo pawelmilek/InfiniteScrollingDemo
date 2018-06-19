@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A7B89BB8948E1EA13E0C27DC /* Pods_InfiniteScrollingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD83AB8EDE4DE655C977F34C /* Pods_InfiniteScrollingDemo.framework */; };
+		E20BBBEA20D851C900D81F8A /* ThumbTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBBE820D851C900D81F8A /* ThumbTableViewCell.swift */; };
+		E20BBBEB20D851C900D81F8A /* ThumbTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20BBBE920D851C900D81F8A /* ThumbTableViewCell.xib */; };
+		E20BBBEE20D8533F00D81F8A /* UITableView+Registrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBBED20D8533F00D81F8A /* UITableView+Registrable.swift */; };
+		E20BBBF120D8537200D81F8A /* Registrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBBF020D8537200D81F8A /* Registrable.swift */; };
+		E20BBBF520D8541000D81F8A /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBBF420D8541000D81F8A /* NibLoadable.swift */; };
+		E20BBBF720D8545800D81F8A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBBF620D8545800D81F8A /* ReusableView.swift */; };
+		E20BBBF920D857B700D81F8A /* UIView+NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBBF820D857B700D81F8A /* UIView+NibLoadableView.swift */; };
+		E20BBBFB20D857FF00D81F8A /* UIView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBBFA20D857FF00D81F8A /* UIView+ReusableView.swift */; };
+		E20BBBFD20D8596D00D81F8A /* CellDequeueble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBBFC20D8596D00D81F8A /* CellDequeueble.swift */; };
+		E20BBBFF20D859B500D81F8A /* UITableView+CellDequeueble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBBFE20D859B500D81F8A /* UITableView+CellDequeueble.swift */; };
+		E20BBC0620D8696400D81F8A /* PlaylistItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBC0520D8696400D81F8A /* PlaylistItemsResponse.swift */; };
+		E20BBC0820D86A1B00D81F8A /* PlaylistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBC0720D86A1B00D81F8A /* PlaylistItem.swift */; };
+		E20BBC0A20D86BC100D81F8A /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBC0920D86BC100D81F8A /* PageInfo.swift */; };
+		E20BBC0C20D86D9300D81F8A /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBC0B20D86D9300D81F8A /* Snippet.swift */; };
+		E20BBC0E20D870C400D81F8A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBC0D20D870C300D81F8A /* ActivityIndicator.swift */; };
+		E20BBC1020D874DA00D81F8A /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBC0F20D874DA00D81F8A /* Thumbnail.swift */; };
 		E27CAD8920D5CF5900E5BB9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CAD8820D5CF5900E5BB9B /* AppDelegate.swift */; };
 		E27CAD8B20D5CF5900E5BB9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CAD8A20D5CF5900E5BB9B /* ViewController.swift */; };
 		E27CAD8E20D5CF5900E5BB9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27CAD8C20D5CF5900E5BB9B /* Main.storyboard */; };
@@ -20,13 +36,28 @@
 		E2CCC32320D82CA700B27C1C /* WebServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31F20D82CA700B27C1C /* WebServiceError.swift */; };
 		E2CCC32420D82CA700B27C1C /* ErrorHandleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC32020D82CA700B27C1C /* ErrorHandleable.swift */; };
 		E2CCC32520D82CA700B27C1C /* WebServiceResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC32120D82CA700B27C1C /* WebServiceResultType.swift */; };
-		E2CCC32820D8353D00B27C1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CCC32720D8353D00B27C1C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CB710262F5AF4A94304CE18 /* Pods-InfiniteScrollingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		719B1E33A95590F23D5DA772 /* Pods-InfiniteScrollingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CD83AB8EDE4DE655C977F34C /* Pods_InfiniteScrollingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteScrollingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20BBBE820D851C900D81F8A /* ThumbTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbTableViewCell.swift; sourceTree = "<group>"; };
+		E20BBBE920D851C900D81F8A /* ThumbTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbTableViewCell.xib; sourceTree = "<group>"; };
+		E20BBBED20D8533F00D81F8A /* UITableView+Registrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Registrable.swift"; sourceTree = "<group>"; };
+		E20BBBF020D8537200D81F8A /* Registrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registrable.swift; sourceTree = "<group>"; };
+		E20BBBF420D8541000D81F8A /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		E20BBBF620D8545800D81F8A /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		E20BBBF820D857B700D81F8A /* UIView+NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoadableView.swift"; sourceTree = "<group>"; };
+		E20BBBFA20D857FF00D81F8A /* UIView+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReusableView.swift"; sourceTree = "<group>"; };
+		E20BBBFC20D8596D00D81F8A /* CellDequeueble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDequeueble.swift; sourceTree = "<group>"; };
+		E20BBBFE20D859B500D81F8A /* UITableView+CellDequeueble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CellDequeueble.swift"; sourceTree = "<group>"; };
+		E20BBC0520D8696400D81F8A /* PlaylistItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsResponse.swift; sourceTree = "<group>"; };
+		E20BBC0720D86A1B00D81F8A /* PlaylistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItem.swift; sourceTree = "<group>"; };
+		E20BBC0920D86BC100D81F8A /* PageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
+		E20BBC0B20D86D9300D81F8A /* Snippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
+		E20BBC0D20D870C300D81F8A /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E20BBC0F20D874DA00D81F8A /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		E27CAD8520D5CF5900E5BB9B /* InfiniteScrollingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27CAD8820D5CF5900E5BB9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E27CAD8A20D5CF5900E5BB9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +72,6 @@
 		E2CCC31F20D82CA700B27C1C /* WebServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceError.swift; sourceTree = "<group>"; };
 		E2CCC32020D82CA700B27C1C /* ErrorHandleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandleable.swift; sourceTree = "<group>"; };
 		E2CCC32120D82CA700B27C1C /* WebServiceResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceResultType.swift; sourceTree = "<group>"; };
-		E2CCC32720D8353D00B27C1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +103,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E20BBBEC20D8533200D81F8A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E20BBBED20D8533F00D81F8A /* UITableView+Registrable.swift */,
+				E20BBBFE20D859B500D81F8A /* UITableView+CellDequeueble.swift */,
+				E20BBBF820D857B700D81F8A /* UIView+NibLoadableView.swift */,
+				E20BBBFA20D857FF00D81F8A /* UIView+ReusableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E20BBBEF20D8536700D81F8A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E2CCC31020D827E900B27C1C /* ViewSetupable.swift */,
+				E20BBBFC20D8596D00D81F8A /* CellDequeueble.swift */,
+				E20BBBF020D8537200D81F8A /* Registrable.swift */,
+				E20BBBF420D8541000D81F8A /* NibLoadable.swift */,
+				E20BBBF620D8545800D81F8A /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E20BBC0020D8644900D81F8A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E20BBBE820D851C900D81F8A /* ThumbTableViewCell.swift */,
+				E20BBBE920D851C900D81F8A /* ThumbTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E20BBC0120D8663800D81F8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E20BBC0D20D870C300D81F8A /* ActivityIndicator.swift */,
+				E2CCC31720D82C8300B27C1C /* AlertView */,
+				E20BBC0020D8644900D81F8A /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E20BBC0220D8664D00D81F8A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E27CAD8C20D5CF5900E5BB9B /* Main.storyboard */,
+				E27CAD9120D5CF5D00E5BB9B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E20BBC0320D8665B00D81F8A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E27CAD8A20D5CF5900E5BB9B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E20BBC0420D8666600D81F8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E20BBC0520D8696400D81F8A /* PlaylistItemsResponse.swift */,
+				E20BBC0720D86A1B00D81F8A /* PlaylistItem.swift */,
+				E20BBC0B20D86D9300D81F8A /* Snippet.swift */,
+				E20BBC0F20D874DA00D81F8A /* Thumbnail.swift */,
+				E20BBC0920D86BC100D81F8A /* PageInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E27CAD7C20D5CF5900E5BB9B = {
 			isa = PBXGroup;
 			children = (
@@ -94,15 +195,16 @@
 		E27CAD8720D5CF5900E5BB9B /* InfiniteScrollingDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E2CCC31C20D82CA700B27C1C /* NetworkLayer */,
-				E2CCC31720D82C8300B27C1C /* AlertView */,
-				E2CCC31220D8289400B27C1C /* Utilites */,
 				E27CAD8820D5CF5900E5BB9B /* AppDelegate.swift */,
-				E27CAD8A20D5CF5900E5BB9B /* ViewController.swift */,
-				E2CCC31020D827E900B27C1C /* ViewSetupable.swift */,
-				E27CAD8C20D5CF5900E5BB9B /* Main.storyboard */,
+				E20BBBEF20D8536700D81F8A /* Protocols */,
+				E20BBBEC20D8533200D81F8A /* Extensions */,
+				E2CCC31C20D82CA700B27C1C /* NetworkLayer */,
+				E2CCC31220D8289400B27C1C /* Utilites */,
+				E20BBC0420D8666600D81F8A /* Model */,
+				E20BBC0120D8663800D81F8A /* View */,
+				E20BBC0320D8665B00D81F8A /* Controller */,
+				E20BBC0220D8664D00D81F8A /* Storyboards */,
 				E2CCC32620D8352A00B27C1C /* Resources */,
-				E27CAD9120D5CF5D00E5BB9B /* LaunchScreen.storyboard */,
 			);
 			path = InfiniteScrollingDemo;
 			sourceTree = "<group>";
@@ -145,7 +247,6 @@
 		E2CCC32620D8352A00B27C1C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E2CCC32720D8353D00B27C1C /* GoogleService-Info.plist */,
 				E27CAD9420D5CF5D00E5BB9B /* Info.plist */,
 				E27CAD8F20D5CF5D00E5BB9B /* Assets.xcassets */,
 			);
@@ -164,7 +265,6 @@
 				E27CAD8220D5CF5900E5BB9B /* Frameworks */,
 				E27CAD8320D5CF5900E5BB9B /* Resources */,
 				B496285A686D8D9FBC4DD681 /* [CP] Embed Pods Frameworks */,
-				F45DCA9581C368EB96F0C65F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,9 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E27CAD9320D5CF5D00E5BB9B /* LaunchScreen.storyboard in Resources */,
-				E2CCC32820D8353D00B27C1C /* GoogleService-Info.plist in Resources */,
 				E27CAD9020D5CF5D00E5BB9B /* Assets.xcassets in Resources */,
 				E27CAD8E20D5CF5900E5BB9B /* Main.storyboard in Resources */,
+				E20BBBEB20D851C900D81F8A /* ThumbTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,39 +348,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F45DCA9581C368EB96F0C65F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingDemo/Pods-InfiniteScrollingDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -290,15 +366,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20BBC0820D86A1B00D81F8A /* PlaylistItem.swift in Sources */,
+				E20BBBEE20D8533F00D81F8A /* UITableView+Registrable.swift in Sources */,
 				E27CAD8B20D5CF5900E5BB9B /* ViewController.swift in Sources */,
 				E2CCC32220D82CA700B27C1C /* WebService.swift in Sources */,
+				E20BBC0620D8696400D81F8A /* PlaylistItemsResponse.swift in Sources */,
+				E20BBBF920D857B700D81F8A /* UIView+NibLoadableView.swift in Sources */,
+				E20BBBFD20D8596D00D81F8A /* CellDequeueble.swift in Sources */,
 				E2CCC31120D827E900B27C1C /* ViewSetupable.swift in Sources */,
+				E20BBBF120D8537200D81F8A /* Registrable.swift in Sources */,
+				E20BBC0C20D86D9300D81F8A /* Snippet.swift in Sources */,
+				E20BBBFB20D857FF00D81F8A /* UIView+ReusableView.swift in Sources */,
+				E20BBBF720D8545800D81F8A /* ReusableView.swift in Sources */,
+				E20BBC0E20D870C400D81F8A /* ActivityIndicator.swift in Sources */,
 				E2CCC32520D82CA700B27C1C /* WebServiceResultType.swift in Sources */,
+				E20BBC1020D874DA00D81F8A /* Thumbnail.swift in Sources */,
 				E2CCC31A20D82C8300B27C1C /* AlertViewPresenter.swift in Sources */,
 				E2CCC32420D82CA700B27C1C /* ErrorHandleable.swift in Sources */,
+				E20BBC0A20D86BC100D81F8A /* PageInfo.swift in Sources */,
 				E27CAD8920D5CF5900E5BB9B /* AppDelegate.swift in Sources */,
+				E20BBBF520D8541000D81F8A /* NibLoadable.swift in Sources */,
 				E2CCC32320D82CA700B27C1C /* WebServiceError.swift in Sources */,
 				E2CCC31B20D82C8300B27C1C /* AlertViewPresenterDelegate.swift in Sources */,
+				E20BBBEA20D851C900D81F8A /* ThumbTableViewCell.swift in Sources */,
+				E20BBBFF20D859B500D81F8A /* UITableView+CellDequeueble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pawelmilek.InfiniteScrollingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,7 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pawelmilek.InfiniteScrollingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
