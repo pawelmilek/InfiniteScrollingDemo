@@ -34,6 +34,14 @@ class ViewController: UIViewController {
     super.viewWillAppear(animated)
     setupStyle()
   }
+  
+  
+  @IBAction func moveToTopAndRefreshButtonTapped(_ sender: UIBarButtonItem) {
+    tableView.setContentOffset(CGPoint(x: 0,  y: UIApplication.shared.statusBarFrame.height), animated: true)
+    let indexPath = IndexPath(row: 0, section: 0)
+    tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+  }
+  
 }
 
 
@@ -246,5 +254,13 @@ extension ViewController: UITableViewDelegate {
       tableView.tableFooterView?.isHidden = true
     }
   }
+  
+}
+
+
+// MARK: Actions
+extension ViewController {
+  
+  
   
 }

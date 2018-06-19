@@ -32,7 +32,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RRY-11-WTo"/>
+                    <navigationItem key="navigationItem" id="RRY-11-WTo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="8UU-R6-E83">
+                            <connections>
+                                <action selector="moveToTopAndRefreshButtonTapped:" destination="BYZ-38-t0r" id="15t-rk-ErB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="FW6-tB-XGn" id="hLn-2B-JXh"/>
                     </connections>
