@@ -9,30 +9,30 @@
 import Foundation
 
 enum WebServiceError: ErrorHandleable {
-    case unknownURL(reason: String)
-    case requestFailed
-    case dataNotAvailable
-    case decodeFailed
+  case unknownURL(reason: String)
+  case requestFailed
+  case dataNotAvailable
+  case decodeFailed
 }
 
 
 // MARK: - ErrorHandleable protocol
 extension WebServiceError {
-    
-    var description: String {
-        switch self {
-        case .unknownURL(reason: let reason):
-            return reason
-            
-        case .requestFailed:
-            return "Error JSON request failed"
-            
-        case .dataNotAvailable:
-            return "Error data not available"
-            
-        case .decodeFailed:
-            return "Error decoding JSON failed"
-        }
+  
+  var description: String {
+    switch self {
+    case .unknownURL(reason: let reason):
+      return reason
+      
+    case .requestFailed:
+      return "Error JSON request failed"
+      
+    case .dataNotAvailable:
+      return "Error data not available"
+      
+    case .decodeFailed:
+      return "Error decoding JSON failed"
     }
-    
+  }
+  
 }

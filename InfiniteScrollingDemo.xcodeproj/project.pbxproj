@@ -24,6 +24,7 @@
 		E20BBC0C20D86D9300D81F8A /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBC0B20D86D9300D81F8A /* Snippet.swift */; };
 		E20BBC0E20D870C400D81F8A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBC0D20D870C300D81F8A /* ActivityIndicator.swift */; };
 		E20BBC1020D874DA00D81F8A /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BBC0F20D874DA00D81F8A /* Thumbnail.swift */; };
+		E20BEBB220E05D220097837E /* WebServiceResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BEBB120E05D220097837E /* WebServiceResource.swift */; };
 		E27CAD8920D5CF5900E5BB9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CAD8820D5CF5900E5BB9B /* AppDelegate.swift */; };
 		E27CAD8B20D5CF5900E5BB9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CAD8A20D5CF5900E5BB9B /* ViewController.swift */; };
 		E27CAD8E20D5CF5900E5BB9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27CAD8C20D5CF5900E5BB9B /* Main.storyboard */; };
@@ -32,7 +33,7 @@
 		E2CCC31120D827E900B27C1C /* ViewSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31020D827E900B27C1C /* ViewSetupable.swift */; };
 		E2CCC31A20D82C8300B27C1C /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31820D82C8300B27C1C /* AlertViewPresenter.swift */; };
 		E2CCC31B20D82C8300B27C1C /* AlertViewPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31920D82C8300B27C1C /* AlertViewPresenterDelegate.swift */; };
-		E2CCC32220D82CA700B27C1C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31D20D82CA700B27C1C /* WebService.swift */; };
+		E2CCC32220D82CA700B27C1C /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31D20D82CA700B27C1C /* WebServiceAPI.swift */; };
 		E2CCC32320D82CA700B27C1C /* WebServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC31F20D82CA700B27C1C /* WebServiceError.swift */; };
 		E2CCC32420D82CA700B27C1C /* ErrorHandleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC32020D82CA700B27C1C /* ErrorHandleable.swift */; };
 		E2CCC32520D82CA700B27C1C /* WebServiceResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CCC32120D82CA700B27C1C /* WebServiceResultType.swift */; };
@@ -58,6 +59,7 @@
 		E20BBC0B20D86D9300D81F8A /* Snippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
 		E20BBC0D20D870C300D81F8A /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E20BBC0F20D874DA00D81F8A /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		E20BEBB120E05D220097837E /* WebServiceResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceResource.swift; sourceTree = "<group>"; };
 		E27CAD8520D5CF5900E5BB9B /* InfiniteScrollingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27CAD8820D5CF5900E5BB9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E27CAD8A20D5CF5900E5BB9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 		E2CCC31020D827E900B27C1C /* ViewSetupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSetupable.swift; sourceTree = "<group>"; };
 		E2CCC31820D82C8300B27C1C /* AlertViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewPresenter.swift; sourceTree = "<group>"; };
 		E2CCC31920D82C8300B27C1C /* AlertViewPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewPresenterDelegate.swift; sourceTree = "<group>"; };
-		E2CCC31D20D82CA700B27C1C /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		E2CCC31D20D82CA700B27C1C /* WebServiceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceAPI.swift; sourceTree = "<group>"; };
 		E2CCC31F20D82CA700B27C1C /* WebServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceError.swift; sourceTree = "<group>"; };
 		E2CCC32020D82CA700B27C1C /* ErrorHandleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandleable.swift; sourceTree = "<group>"; };
 		E2CCC32120D82CA700B27C1C /* WebServiceResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceResultType.swift; sourceTree = "<group>"; };
@@ -229,7 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				E2CCC31E20D82CA700B27C1C /* Errors */,
-				E2CCC31D20D82CA700B27C1C /* WebService.swift */,
+				E2CCC31D20D82CA700B27C1C /* WebServiceAPI.swift */,
+				E20BEBB120E05D220097837E /* WebServiceResource.swift */,
 				E2CCC32120D82CA700B27C1C /* WebServiceResultType.swift */,
 			);
 			path = NetworkLayer;
@@ -369,7 +372,7 @@
 				E20BBC0820D86A1B00D81F8A /* PlaylistItem.swift in Sources */,
 				E20BBBEE20D8533F00D81F8A /* UITableView+Registrable.swift in Sources */,
 				E27CAD8B20D5CF5900E5BB9B /* ViewController.swift in Sources */,
-				E2CCC32220D82CA700B27C1C /* WebService.swift in Sources */,
+				E2CCC32220D82CA700B27C1C /* WebServiceAPI.swift in Sources */,
 				E20BBC0620D8696400D81F8A /* PlaylistItemsResponse.swift in Sources */,
 				E20BBBF920D857B700D81F8A /* UIView+NibLoadableView.swift in Sources */,
 				E20BBBFD20D8596D00D81F8A /* CellDequeueble.swift in Sources */,
@@ -378,6 +381,7 @@
 				E20BBC0C20D86D9300D81F8A /* Snippet.swift in Sources */,
 				E20BBBFB20D857FF00D81F8A /* UIView+ReusableView.swift in Sources */,
 				E20BBBF720D8545800D81F8A /* ReusableView.swift in Sources */,
+				E20BEBB220E05D220097837E /* WebServiceResource.swift in Sources */,
 				E20BBC0E20D870C400D81F8A /* ActivityIndicator.swift in Sources */,
 				E2CCC32520D82CA700B27C1C /* WebServiceResultType.swift in Sources */,
 				E20BBC1020D874DA00D81F8A /* Thumbnail.swift in Sources */,

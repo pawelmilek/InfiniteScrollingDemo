@@ -12,13 +12,15 @@ import SDWebImage
 class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   
-  private lazy var refreshController: UIRefreshControl = {
+  private let webServiceShared = WebServiceAPI.shared
+  private lazy var refreshControl: UIRefreshControl = {
     let refreshCtr = UIRefreshControl()
     refreshCtr.tintColor = .black
-    refreshCtr.addTarget(self, action: #selector(fetchData), for: .valueChanged)
+    refreshCtr.addTarget(self, action: #selector(fetchPlaylistData), for: .valueChanged)
     return refreshCtr
   }()
   
+  private var moveToTopAndRefreshButtonTappedCounter = 0
   private var isMoreDataLoading = false
   private var shouldShowActivityIndicatorOnce = true
   private var playlistItemsResponse: PlaylistItemsResponse?
@@ -27,21 +29,13 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setup()
-    fetchData()
+    fetchPlaylistData()
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     setupStyle()
   }
-  
-  
-  @IBAction func moveToTopAndRefreshButtonTapped(_ sender: UIBarButtonItem) {
-    tableView.setContentOffset(CGPoint(x: 0,  y: UIApplication.shared.statusBarFrame.height), animated: true)
-    let indexPath = IndexPath(row: 0, section: 0)
-    tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-  }
-  
 }
 
 
@@ -94,7 +88,7 @@ private extension ViewController {
   }
   
   func setRefreshController() {
-    tableView.refreshControl = refreshController
+    tableView.refreshControl = refreshControl
     tableView.alwaysBounceVertical = true
   }
   
@@ -135,9 +129,11 @@ private extension ViewController {
 // MARK: - Private - Fetch data
 private extension ViewController {
   
-  @objc func fetchData() {
+  @objc func fetchPlaylistData() {
     showActivityIndicator()
-    WebService.shared.requestVideosListData(completionHandler: {[weak self] result in
+    
+    let playlistItemsResource = WebServiceResource<PlaylistItemsResponse>(url: webServiceShared.playlistItemsURL)
+    webServiceShared.fetch(resource: playlistItemsResource) { [weak self] result in
       guard let strongSelf = self else { return }
       
       switch result {
@@ -152,14 +148,13 @@ private extension ViewController {
       
       strongSelf.hideRefreshController()
       strongSelf.hideActivityIndicator()
-      
-      
-    })
+    }
   }
   
-  func fetchMoreData() {
-    let nextPageToken = playlistItemsResponse?.nextPageToken
-    WebService.shared.requestVideosListData(nextPageToken: nextPageToken, completionHandler: { [weak self] result in
+  func fetchMorePlaylistData() {
+    guard let nextPageToken = playlistItemsResponse?.nextPageToken else { return }
+    let nextPagePlaylistItemsResource = WebServiceResource<PlaylistItemsResponse>(url: webServiceShared.nextPagePlaylistItemsURL(at: nextPageToken))
+    webServiceShared.fetch(resource: nextPagePlaylistItemsResource) { [weak self] result in
       guard let strongSelf = self else { return }
       
       switch result {
@@ -173,7 +168,7 @@ private extension ViewController {
       }
       
       strongSelf.isMoreDataLoading = false
-    })
+    }
   }
   
 }
@@ -190,7 +185,7 @@ private extension ViewController {
   
   func hideRefreshController() {
     DispatchQueue.main.async {
-      self.refreshController.endRefreshing()
+      self.refreshControl.endRefreshing()
     }
   }
   
@@ -243,7 +238,7 @@ extension ViewController: UITableViewDelegate {
       
       DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
         self.isMoreDataLoading = true
-        self.fetchMoreData()
+        self.fetchMorePlaylistData()
       }
       
     } else {
@@ -261,6 +256,44 @@ extension ViewController: UITableViewDelegate {
 // MARK: Actions
 extension ViewController {
   
+  @IBAction func moveToTopAndRefreshButtonTapped(_ sender: UIBarButtonItem) {
+    scrollTableViewToTop()
+    moveToTopAndRefreshButtonTappedCounter += 1
+    
+    if moveToTopAndRefreshButtonTappedCounter >= 2 {
+      moveToTopAndRefreshButtonTappedCounter = 0
+      executePullToRefresh()
+    }
+  }
   
+}
+
+
+
+// MARK: - Private - Scroll TableView to top
+private extension ViewController {
+  
+  func scrollTableViewToTop() {
+    tableView.setContentOffset(CGPoint(x: 0,  y: UIApplication.shared.statusBarFrame.height), animated: true)
+    let indexPath = IndexPath(row: 0, section: 0)
+    tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+  }
+}
+
+
+// MARK: - Private - Execute pull to refresh
+private extension ViewController {
+  
+  func executePullToRefresh() {
+    guard !refreshControl.isRefreshing else { return }
+    
+    let contentOffset = CGPoint(x: 0, y: -refreshControl.frame.height)
+    tableView.setContentOffset(contentOffset, animated: true)
+    
+    refreshControl.beginRefreshing()
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+      self.refreshControl.sendActions(for: .valueChanged)
+    }
+  }
   
 }
