@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  InfiniteScrollingViewController.swift
 //  InfiniteScrollingDemo
 //
 //  Created by Pawel Milek on 16/06/2018.
@@ -9,10 +9,10 @@
 import UIKit
 import SDWebImage
 
-class ViewController: UIViewController {
+class InfiniteScrollingViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   
-  private let webServiceShared = WebServiceAPI.shared
+  private let webServiceShared = WebService.shared
   private lazy var refreshControl: UIRefreshControl = {
     let refreshCtr = UIRefreshControl()
     refreshCtr.tintColor = .black
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
 
 
 // MARK: - ViewSetupable protocol
-extension ViewController: ViewSetupable {
+extension InfiniteScrollingViewController: ViewSetupable {
   
   func setup() {
     setTableView()
@@ -54,7 +54,7 @@ extension ViewController: ViewSetupable {
 
 
 // MARK: - Private - Set tableview
-private extension ViewController {
+private extension InfiniteScrollingViewController {
   
   func setTableView() {
     setDelegate()
@@ -67,7 +67,7 @@ private extension ViewController {
 
 
 // MARK: - Private - Set tableview
-private extension ViewController {
+private extension InfiniteScrollingViewController {
   
   func setDelegate() {
     tableView.dataSource = self
@@ -96,7 +96,7 @@ private extension ViewController {
 
 
 // MARK: - Private - Set navigation bar
-private extension ViewController {
+private extension InfiniteScrollingViewController {
   
   func setNavigationBar() {
     setTitle()
@@ -107,7 +107,7 @@ private extension ViewController {
 
 
 // MARK: - Private - Set navigation bar
-private extension ViewController {
+private extension InfiniteScrollingViewController {
   
   func setTitle() {
     let titleTextAttributed: [NSAttributedStringKey: Any] = [.foregroundColor: UIColor.black, .font: UIFont(name: "AvenirNext-Regular", size: 17)!]
@@ -127,13 +127,13 @@ private extension ViewController {
 
 
 // MARK: - Private - Fetch data
-private extension ViewController {
+private extension InfiniteScrollingViewController {
   
   @objc func fetchPlaylistData() {
     showActivityIndicator()
     
-    let playlistItemsResource = WebServiceResource<PlaylistItemsResponse>(url: webServiceShared.playlistItemsURL)
-    webServiceShared.fetch(resource: playlistItemsResource) { [weak self] result in
+    let request = YoutubePlaylistItemsRequest.make()
+    webServiceShared.fetch(PlaylistItemsResponse.self, with: request) { [weak self] result in
       guard let strongSelf = self else { return }
       
       switch result {
@@ -153,8 +153,8 @@ private extension ViewController {
   
   func fetchMorePlaylistData() {
     guard let nextPageToken = playlistItemsResponse?.nextPageToken else { return }
-    let nextPagePlaylistItemsResource = WebServiceResource<PlaylistItemsResponse>(url: webServiceShared.nextPagePlaylistItemsURL(at: nextPageToken))
-    webServiceShared.fetch(resource: nextPagePlaylistItemsResource) { [weak self] result in
+    let nextPageRequest = YoutubePlaylistItemsRequest.make(nextPage: nextPageToken)
+    webServiceShared.fetch(PlaylistItemsResponse.self, with: nextPageRequest) { [weak self] result in
       guard let strongSelf = self else { return }
       
       switch result {
@@ -175,7 +175,7 @@ private extension ViewController {
 
 
 // MARK: - Private - Reload/Refresh data
-private extension ViewController {
+private extension InfiniteScrollingViewController {
   
   func reloadPlaylistItems() {
     DispatchQueue.main.async {
@@ -205,7 +205,7 @@ private extension ViewController {
 
 
 // MARK: - UITableViewDataSource protocol
-extension ViewController: UITableViewDataSource {
+extension InfiniteScrollingViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return playlistItemsResponse?.items.count ?? 0
@@ -224,7 +224,7 @@ extension ViewController: UITableViewDataSource {
 
 
 // MARK: - UITableViewDelegate protocol
-extension ViewController: UITableViewDelegate {
+extension InfiniteScrollingViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     guard let items = playlistItemsResponse?.items, isMoreDataLoading == false else { return }
@@ -254,7 +254,7 @@ extension ViewController: UITableViewDelegate {
 
 
 // MARK: Actions
-extension ViewController {
+extension InfiniteScrollingViewController {
   
   @IBAction func moveToTopAndRefreshButtonTapped(_ sender: UIBarButtonItem) {
     scrollTableViewToTop()
@@ -271,7 +271,7 @@ extension ViewController {
 
 
 // MARK: - Private - Scroll TableView to top
-private extension ViewController {
+private extension InfiniteScrollingViewController {
   
   func scrollTableViewToTop() {
     tableView.setContentOffset(CGPoint(x: 0,  y: UIApplication.shared.statusBarFrame.height), animated: true)
@@ -282,7 +282,7 @@ private extension ViewController {
 
 
 // MARK: - Private - Execute pull to refresh
-private extension ViewController {
+private extension InfiniteScrollingViewController {
   
   func executePullToRefresh() {
     guard !refreshControl.isRefreshing else { return }

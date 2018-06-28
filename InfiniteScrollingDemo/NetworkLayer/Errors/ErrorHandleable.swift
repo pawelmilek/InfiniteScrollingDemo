@@ -14,7 +14,9 @@ protocol ErrorHandleable: Error, CustomStringConvertible { }
 extension ErrorHandleable {
   
   func handle() {
-    AlertViewPresenter.shared.presentError(withMessage: self.description)
+    DispatchQueue.main.async {
+      AlertViewPresenter.shared.presentError(withMessage: self.description)
+    }
   }
   
 }

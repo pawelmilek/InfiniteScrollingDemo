@@ -25,13 +25,13 @@ extension WebServiceError {
       return reason
       
     case .requestFailed:
-      return "Error JSON request failed"
+      return "An error occurred while fetching JSON data."
       
     case .dataNotAvailable:
-      return "Error data not available"
+      return "Data not available."
       
     case .decodeFailed:
-      return "Error decoding JSON failed"
+      return "An error occurred while decoding data."
     }
   }
   
